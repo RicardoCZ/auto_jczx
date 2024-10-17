@@ -92,7 +92,9 @@ if __name__ == "__main__":
     '/home/runner/work/auto_jczx/auto_jczx/luascripts_replaced_android'
 ]
 
-    os.makedirs(directories, exist_ok=True)
+# 遍历目录列表，对每个目录调用os.makedirs()
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
     merge_dir = os.path.join(project_root, "merge")
     extracted_dir = os.path.join(project_root, "extracted_scripts")
     
