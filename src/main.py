@@ -81,7 +81,6 @@ def process_lua_scripts(sysInfo):
     logging.info(f"Generated encrypted file for {sysInfo}: {final_output}")
 
 if __name__ == "__main__":
-    mkdir -p merge extracted_scripts
     merge_dir = os.path.join(project_root, "merge")
     extracted_dir = os.path.join(project_root, "extracted_scripts")
     
