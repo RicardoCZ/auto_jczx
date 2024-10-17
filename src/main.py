@@ -84,7 +84,6 @@ if __name__ == "__main__":
     directories = [
     '/home/runner/work/auto_jczx/auto_jczx/merge',
     '/home/runner/work/auto_jczx/auto_jczx/extracted_scripts',
-    '/home/runner/work/auto_jczx/auto_jczx/luascripts_ios'
 ]
 
 # 遍历目录列表，对每个目录调用os.makedirs()
