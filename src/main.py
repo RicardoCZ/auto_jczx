@@ -81,6 +81,7 @@ def process_lua_scripts(sysInfo):
     logging.info(f"Generated encrypted file for {sysInfo}: {final_output}")
 
 if __name__ == "__main__":
+    os.makedirs( '/home/runner/work/auto_jczx/auto_jczx/merge', exist_ok=True)
     merge_dir = os.path.join(project_root, "merge")
     extracted_dir = os.path.join(project_root, "extracted_scripts")
     
