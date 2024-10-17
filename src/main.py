@@ -81,7 +81,18 @@ def process_lua_scripts(sysInfo):
     logging.info(f"Generated encrypted file for {sysInfo}: {final_output}")
 
 if __name__ == "__main__":
-    os.makedirs( '/home/runner/work/auto_jczx/auto_jczx/merge', exist_ok=True)
+    directories = [
+    '/home/runner/work/auto_jczx/auto_jczx/merge',
+    '/home/runner/work/auto_jczx/auto_jczx/extracted_scripts',
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_ios',
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_decrypted_ios',
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_replaced_ios'
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_android',
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_decrypted_android',
+    '/home/runner/work/auto_jczx/auto_jczx/luascripts_replaced_android'
+]
+
+    os.makedirs(directories, exist_ok=True)
     merge_dir = os.path.join(project_root, "merge")
     extracted_dir = os.path.join(project_root, "extracted_scripts")
     
